@@ -1,0 +1,13 @@
+models:
+  - model: marketeam/Phi-Marketing
+    parameters:
+      weight: 1.0
+  - model: OEvortex/EMO-phi-128k
+    parameters:
+      weight: 1.0
+merge_method: della
+base_model: marketeam/Phi-Marketing
+parameters:
+  density: 0.7
+  lambda: 1.1
+  epsilon: 0.2

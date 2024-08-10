@@ -1,0 +1,31 @@
+base_model: mlabonne/NeuralDaredevil-7B
+gate_mode: hidden
+experts:
+  - source_model: mlabonne/NeuralDaredevil-7B
+    positive_prompts:
+    - "hello"
+    - "help"
+    - "question"
+    - "explain"
+    - "information"
+  - source_model: BioMistral/BioMistral-7B
+    positive_prompts:
+    - "medical"
+    - "health"
+    - "biomedical"
+    - "clinical"
+    - "anatomy"
+  - source_model: mistralai/Mathstral-7B-v0.1
+    positive_prompts:
+    - "math"
+    - "calculation"
+    - "equation"
+    - "geometry"
+    - "algebra"
+  - source_model: FPHam/Writing_Partner_Mistral_7B
+    positive_prompts:
+    - "writing"
+    - "creative process"
+    - "story structure"
+    - "character development"
+    - "plot"

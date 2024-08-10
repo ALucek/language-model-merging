@@ -1,0 +1,7 @@
+models:
+  - model: google/gemma-2-2b-it
+  - model: VAGOsolutions/SauerkrautLM-gemma-2-2b-it
+  - model: stvlynn/Gemma-2-2b-Chinese-it
+merge_method: model_stock
+base_model: google/gemma-2-2b-it
+dtype: bfloat16
